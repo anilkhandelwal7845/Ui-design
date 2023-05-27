@@ -24,13 +24,13 @@ class _FinalScreenState extends State<FinalScreen>
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_outlined,
             color: Colors.black,
           ),
         ),
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           "My Data",
           style: TextStyle(color: Colors.black),
         ),
@@ -47,13 +47,13 @@ class _FinalScreenState extends State<FinalScreen>
                         backgroundColor: Colors.white,
                         pinned: true,
                         bottom: PreferredSize(
-                          preferredSize: Size.fromHeight(30),
+                          preferredSize: const Size.fromHeight(30),
                           child: Container(
-                            margin: EdgeInsets.all(8),
+                            margin: const EdgeInsets.all(8),
                             child: TabBar(
-                              indicatorPadding: EdgeInsets.all(0),
+                              indicatorPadding:  const EdgeInsets.all(0),
                               indicatorSize: TabBarIndicatorSize.label,
-                              labelPadding: EdgeInsets.all(10),
+                              labelPadding: const EdgeInsets.all(10),
                               controller: _tabController,
                               isScrollable: true,
                               indicator: BoxDecoration(
@@ -62,11 +62,11 @@ class _FinalScreenState extends State<FinalScreen>
                               tabs: [
                                 Container(
                                   decoration: BoxDecoration(
-                                      color: Color.fromARGB(255, 3, 79, 71),
+                                      color: const Color.fromARGB(255, 3, 79, 71),
                                       borderRadius: BorderRadius.circular(10)),
                                   width: 170,
                                   height: 40,
-                                  child: Text(
+                                  child: const Text(
                                     "Priscripition",
                                     style: TextStyle(
                                         color: Colors.white,
@@ -81,7 +81,7 @@ class _FinalScreenState extends State<FinalScreen>
                                       borderRadius: BorderRadius.circular(10)),
                                   width: 170,
                                   height: 40,
-                                  child: Text(
+                                  child: const Text(
                                     "Lab Reports",
                                     style: TextStyle(
                                         color: Colors.white,
@@ -97,12 +97,12 @@ class _FinalScreenState extends State<FinalScreen>
                                         BoxShadow(
                                             color: Colors.grey.withOpacity(0.2),
                                             blurRadius: 7,
-                                            offset: Offset(0, 0))
+                                            offset: const Offset(0, 0))
                                       ],
                                       borderRadius: BorderRadius.circular(10)),
                                   width: 170,
                                   height: 40,
-                                  child: Text(
+                                  child: const Text(
                                     "Vaccination",
                                     style: TextStyle(
                                         color: Colors.white,
@@ -124,7 +124,7 @@ class _FinalScreenState extends State<FinalScreen>
                       Material(
                         child: Column(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Row(
@@ -132,15 +132,15 @@ class _FinalScreenState extends State<FinalScreen>
                               children: [
                                 Expanded(
                                     child: Container(
-                                  margin: EdgeInsets.only(right: 10),
+                                  margin: const EdgeInsets.only(right: 10),
                                   color: Colors.black,
                                   width: 300,
                                   height: 1,
                                 )),
-                                Text("2023"),
+                                const Text("2023"),
                                 Expanded(
                                     child: Container(
-                                  margin: EdgeInsets.only(left: 10),
+                                  margin: const EdgeInsets.only(left: 10),
                                   color: Colors.black,
                                   width: 300,
                                   height: 1,
@@ -163,7 +163,7 @@ class _FinalScreenState extends State<FinalScreen>
                                           child: Column(
                                             children: [
                                               Container(
-                                                padding: EdgeInsets.only(
+                                                padding: const EdgeInsets.only(
                                                     top: 15,
                                                     left: 20,
                                                     right: 10,
@@ -188,13 +188,13 @@ class _FinalScreenState extends State<FinalScreen>
                                                             fit: BoxFit.cover,
                                                           ),
                                                         ),
-                                                        Padding(
+                                                        const Padding(
                                                           padding:
-                                                              const EdgeInsets
+                                                               EdgeInsets
                                                                       .only(
                                                                   top: 5,
                                                                   bottom: 2),
-                                                          child: Text(
+                                                          child:  Text(
                                                             "Dr Neelam Dutta",
                                                             style: TextStyle(
                                                                 letterSpacing:
@@ -231,20 +231,20 @@ class _FinalScreenState extends State<FinalScreen>
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Text(
+                                                        const Text(
                                                           "Patients : Khushboo Singh",
                                                           style: TextStyle(
                                                               fontSize: 12),
                                                         ),
-                                                        SizedBox(
+                                                        const SizedBox(
                                                           height: 2,
                                                         ),
-                                                        Text(
+                                                        const Text(
                                                           "Health condition : High Blood Pressure",
                                                           style: TextStyle(
                                                               fontSize: 12),
                                                         ),
-                                                        SizedBox(
+                                                        const SizedBox(
                                                           height: 10,
                                                         ),
                                                         Container(
@@ -267,10 +267,10 @@ class _FinalScreenState extends State<FinalScreen>
                                                                         .asset(
                                                                             "assets/pdf.jpg"),
                                                                   ),
-                                                                  SizedBox(
+                                                                  const SizedBox(
                                                                     height: 4,
                                                                   ),
-                                                                  Text(
+                                                                  const Text(
                                                                     "prescription.pdf",
                                                                     style: TextStyle(
                                                                         fontSize:
@@ -280,7 +280,7 @@ class _FinalScreenState extends State<FinalScreen>
                                                                   )
                                                                 ],
                                                               ),
-                                                              SizedBox(
+                                                              const SizedBox(
                                                                 width: 60,
                                                               ),
                                                               Column(
@@ -292,10 +292,10 @@ class _FinalScreenState extends State<FinalScreen>
                                                                         .asset(
                                                                             "assets/galleries.png"),
                                                                   ),
-                                                                  SizedBox(
+                                                                  const SizedBox(
                                                                     height: 4,
                                                                   ),
-                                                                  Text(
+                                                                  const Text(
                                                                     "main file.jpg",
                                                                     style: TextStyle(
                                                                         fontSize:
@@ -310,18 +310,18 @@ class _FinalScreenState extends State<FinalScreen>
                                                         ),
                                                       ],
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.share,
                                                       color: Colors.grey,
                                                       size: 17,
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       width: 5,
                                                     )
                                                   ],
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 5,
                                               ),
                                               Container(
@@ -336,20 +336,20 @@ class _FinalScreenState extends State<FinalScreen>
                                                 children: [
                                                   Expanded(
                                                       child: Row(
-                                                    children: [
-                                                      SizedBox(
+                                                    children: const [
+                                                       SizedBox(
                                                         width: 10,
                                                       ),
-                                                      Icon(
+                                                       Icon(
                                                         Icons
                                                             .access_time_outlined,
                                                         size: 14,
                                                         color: Colors.grey,
                                                       ),
-                                                      SizedBox(
+                                                       SizedBox(
                                                         width: 10,
                                                       ),
-                                                      Text(
+                                                       Text(
                                                         'Updated before 2 weeks',
                                                         style: TextStyle(
                                                             fontSize: 10,
@@ -359,7 +359,7 @@ class _FinalScreenState extends State<FinalScreen>
                                                   )),
                                                   Container(
                                                     padding:
-                                                        EdgeInsets.symmetric(
+                                                        const EdgeInsets.symmetric(
                                                             horizontal: 15,
                                                             vertical: 10),
                                                     child: Row(
@@ -376,7 +376,7 @@ class _FinalScreenState extends State<FinalScreen>
                                                                   .withOpacity(
                                                                       0.7)),
                                                         ),
-                                                        SizedBox(
+                                                        const SizedBox(
                                                           width: 5,
                                                         ),
                                                         Icon(
@@ -399,13 +399,13 @@ class _FinalScreenState extends State<FinalScreen>
                           ],
                         ),
                       ),
-                      Material(
+                      const Material(
                         child: ListTile(
                           leading: CircleAvatar(backgroundColor: Colors.teal),
                           title: Text("Content"),
                         ),
                       ),
-                      Material(
+                      const Material(
                         child: ListTile(
                           leading: CircleAvatar(backgroundColor: Colors.teal),
                           title: Text("Content"),
